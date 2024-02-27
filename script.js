@@ -41,6 +41,7 @@ function getTask(){
 
 }
 removeTask=()=>{
+    taskcount.textContent=0
     if(document.getElementById('task-lists').innerHTML==''){
         alert('No Task ,Enter any task')
     }
