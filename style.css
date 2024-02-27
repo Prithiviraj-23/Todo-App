@@ -1,0 +1,29 @@
+:root{
+    --borderthickness:2px;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#add-task-button{
+    background-color:#4CAF50;
+    color:white;
+    border-radius: 50px;
+    padding:4px 12px;
+    text-align: center;
+    border:var(--borderthickness) solid black;
+    box-shadow: ;
+
+}
+#task-input{
+    border-radius: 50px;
+    border:var(--borderthickness) solid black;
+}
+#task-input::placeholder{
+padding-left:10px;
+}
+#add-task-button:hover{
+    background-color: aqua;
+}

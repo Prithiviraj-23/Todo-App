@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my app</title>
+
+    <script src="https://cdn.tailwindcss.com"> </script>
+</head>
+<body>
+  <div class=" flex flex-col justify-center items-center max-w-56 gap-10 mx-auto mt-5">
+    <div class="w-full flex flex-col gap-5">
+    <h1 class="font-bold w-full text-4xl" >Todo</h1>
+    <div  class="flex flex-row gap-3 w-full">
+      <input id="task-input" type="text" placeholder="Enter your task" class="bg-gray-50 rounded-xl px-3 shadow-xl" >
+      <button class="bg-black text-white rounded-xl px-2 py-1 shadow-xl" onclick="getTask()" >Add</button>
+      <button class="bg-red-500 text-white rounded-xl px-2 py-1 shadow-xl" onclick="removeTask()" >Delete All</button>
+    </div>
+    <div>
+      <p>Here total count : <span id="totalcount" ></span></p>
+    </div>
+    </div>
+  
+     <ul id="task-lists" class="w-full flex flex-col gap-3">
+      
+     </ul>
+     
+  
+    <script src="script.js"></script>
+</body>
+</html>
