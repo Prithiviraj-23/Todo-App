@@ -36,16 +36,18 @@ function getTask(){
     taskitem.appendChild(deleteButton)
    totalcount.textContent=taskcount
 //    task-input = ' '
+document.getElementById('task-input').value=''
 
 
 
 }
 removeTask=()=>{
-    taskcount.textContent=0
+    
     if(document.getElementById('task-lists').innerHTML==''){
         alert('No Task ,Enter any task')
     }
     else{
     var dele=document.getElementById('task-lists').innerHTML=''
     }
+    totalcount.textContent=0
 }
